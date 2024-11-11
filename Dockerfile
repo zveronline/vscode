@@ -1,2 +1,2 @@
-FROM linuxserver/code-server
+FROM linuxserver/code-server:latest
 RUN apt-get update && apt-get install -y postgresql-client-16
