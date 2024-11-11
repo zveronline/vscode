@@ -30,7 +30,6 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push Docker image
-        if: steps.changes.outputs.php == 'true'
         uses: docker/build-push-action@v6
         with:
           build-args: |
